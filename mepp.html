@@ -1,0 +1,241 @@
+<!DOCTYPE html> 
+<html><head>
+<meta charset="utf-8">
+<title>meoded app</title>
+
+<link href= "http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="html5lightbox/jquery.js"></script>
+<script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.css"/></script>
+
+
+</head> 
+<body> 
+  
+
+
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1><img src="imagenes/logo.jpg" width="225" height="225" > </h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#Palladino">Marmorino Palladino</a></li>
+            <li><a href="#Tintoreto">Marmorino Tintoreto</a></li>
+			<li><a href="#Lamundo">Stucco Lamundo</a></li>
+			
+			<li><a href="#Velvet">Pearls Velvet</a></li>
+            <li><a href="#Metalillic">Saphire Metallicc</a></li>
+            <li><a href="#Glitter">Cristal Brush</a></li>
+            <li><a href="#Cemento">Golmex /Firenze</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>
+6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-2600</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Palladino">
+	<div data-role="header" ><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a>
+    <center> <img src="imagenes/palladino.jpg" width="200" height="200"  ></center>
+<h4>PALLADINO</h4>
+	</div>
+ <style type="text/css">
+<!--
+body {margin:0; padding:0; background:#fff;}
+#slidebox{position:relative; border:1px solid #ccc; margin:40px auto;overflow:hidden;}
+#slidebox, #slidebox ul {width:300px;height:300px;}
+#slidebox, #slidebox ul li{width:300px;height:300px;}
+#slidebox ul li{position:relative; left:0; background:#eee; float:left;list-style: none; padding:15px 28px;  font-family:Verdana, Geneva, sans-serif; font-size:13px;}
+#slidebox .next, #slidebox .previous{position:absolute; z-index:2; display:block; width:21px; height:21px;top:139px;}
+#slidebox .next{right:0; margin-right:10px; background:url(slidebox_next.png) no-repeat left top;}
+#slidebox .next:hover{background:url(slidebox_next_hover.png) no-repeat left top;}
+#slidebox .previous{margin-left:10px; background:url(slidebox_previous.png) no-repeat left top;}
+#slidebox .previous:hover{background:url(slidebox_previous_hover.png) no-repeat left top;}
+#slidebox .thumbs{position:absolute; z-index:2; bottom:10px; right:10px;}
+#slidebox .thumbs a{display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px; background:url(slidebox_thumb.png); color:#fff;}
+#slidebox .thumbs a:hover{background:#fff; color:#000;}
+#slidebox .thumbs .thumbActive{background:#fff; color:#000; display:block; margin-left:5px; float:left; font-family:Verdana, Geneva, sans-serif; font-size:9px; text-decoration:none; padding:2px 4px;}
+-->
+</style>
+
+<script src="jquery-1.5.2.min.js" type="text/javascript"></script>
+<script src="jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+$(function() {
+	$("#slidebox").jCarouselLite({
+		vertical: false,
+		hoverPause:true,
+		btnPrev: ".previous",
+		btnNext: ".next",
+		visible: 1,
+		start: 0,
+		scroll: 1,
+		circular: true,
+		auto:1000,
+		speed:500,				
+		btnGo:
+		    [".1", ".2",
+		    ".3", ".4"],
+		
+		afterEnd: function(a, to, btnGo) {
+				if(btnGo.length <= to){
+					to = 0;
+				}
+				$(".thumbActive").removeClass("thumbActive");
+				$(btnGo[to]).addClass("thumbActive");
+		    }
+	});
+});
+</script>   
+<div id="slidebox">
+<div class="next"></div>
+<div class="previous"></div>
+<div class="thumbs">
+<a href="#" onClick="" class="1 thumbActive">1</a> 
+<a href="#" onClick="" class="2">2</a> 
+<a href="#" onClick="" class="3 ">3</a> 
+<a href="#" onClick="" class="4">4</a> 
+</div>
+	<ul>
+    	<li><img src="imagenes/pal1.JPG" width="300" height="225"></li>
+    	<li><img src="imagenes/mp_mica_(2).JPG" width="300" height="225"></li>
+    	<li><img src="imagenes/MP_Rigato_Diagonal.jpeg" width="300" height="225"></li>
+    	<li><img src="imagenes/mpb.jpg" width="200" height="300"></li>
+	</ul>
+</div>
+    <!--muestra video -->
+    
+<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+
+    <iframe src="https://www.youtube.com/embed/73yBqql7mBs" width="497" height="298" seamless></iframe>
+	  <iframe src="https://www.youtube.com/embed/73yBqql7mBs" width="497" height="298" seamless></iframe>
+	 <iframe src="https://www.youtube.com/embed/73yBqql7mBs" width="497" height="298" seamless></iframe>
+	
+</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Tintoreto">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a>
+		<center>
+		  <img src="imagenes/titoreto.jpg" width="200" height="200">
+		</center>
+      <h1>Tintoreto</h1>
+	</div>
+	<div data-role="content">	
+		Contenido
+        
+      <a href="imagenes/mt1.JPG" class="html5lightbox" data-group="mygroup" data-thumbnail="imagenes/mt1.JPG" title="MT1">Image1</a>
+<a href="imagenes/mt2.JPG" class="html5lightbox" data-group="mygroup" data-thumbnail="imagenes/mt2.JPG" title="MT2">Image2</a>
+<a href="https://youtu.be/M3CnM2MaZkY4" class="html5lightbox" data-group="mygroup"  data-thumbnail="https://youtu.be/M3CnM2MaZkY" data-width="480" data-height="320" title="tintoreto">Video</a>
+	</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Lamundo">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a></p>
+	 <center>
+	    <img src="imagenes/lamundo.jpg" width="200" height="200">
+	  </center>
+	  <h1>Lamundo</h1>
+	</div>
+	
+    <!--muestra video -->
+    
+<div data-role="popup" id="popupVideo" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content">
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/lOaoPQYgGDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>	  <iframe width="560" height="315" src="https://www.youtube.com/embed/lOaoPQYgGDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/lOaoPQYgGDI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>		
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Velvet">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a>
+		<h1>Velvet</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+</div>
+  
+<div data-role="page" id="Metallic">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a></p>
+	  <p><center>
+	    <img src="imagenes/metalico.jpg" width="200" height="200">
+	  </center> </p>
+	  <h1>Metalico</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260a</h4>
+	</div>
+</div>
+    
+<div data-role="page" id="Cemento">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a></p>
+	  <center><img src="imagenes/cristal.jpg" width="200" height="200"></center>
+	  <h1>Cristal Brush</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page8">
+	<div data-role="header"><a href="#page" data-
+    direction="reverse" data-icon="home" data-transition="flip">inicio</a>
+    <center></center>
+		<h1>Golmex/Firenze</h1>
+	</div>
+	<div data-role="content">	
+		Contenido		
+	</div>
+	<div data-role="footer">
+		<h4>6314 Santa Monica Blvd.
+Los Angeles, CA 90038
+(323) 308-260</h4>
+	</div>
+
+</body>
+</html>
